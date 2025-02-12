@@ -19,7 +19,7 @@
 # n = 100
 # gen = even_gen(n)
 # for i in range((n // 2) + 1):
-#     print(next(gen))
+#     print(next(gen), end=", " if i < n // 2 else "")
 
 # # 3)
 # def div(n):
