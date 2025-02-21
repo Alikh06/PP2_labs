@@ -71,17 +71,47 @@
 # text = ["Hello,world.This is a test", "Python is fun, isn't it?", "Replace spaces, commas. And dots!"]
 # replace(text)
 
-# 7)
-import re
+# # 7)
+# import re
 
-def toCamelCase(text):
-    pattern = r"_\w+"
-    x = str(re.findall(pattern, text))
-    for i in range(len(x) - 1):
-        if x[i] == "_":
-            x[i].removeprefix()
-            x[i+1].upper()
-            return x
-text = {"hello_world", "hi_john"}
-for i in text:
-    print(toCamelCase(i))
+# text_to_match = "some_snake_case"
+
+# res = re.split(r'_', text_to_match)
+
+# print(res)
+
+# ans = ''
+
+# for word in res:
+#     ans += word.capitalize()
+
+# res = ''
+# res += ans[0].lower() + ans[1:]
+
+# print(res)
+
+# # 8)
+# import re
+# text = "helloJohnMyNameIsAlikhan"
+# spl = re.findall(r'[A-Z][^A-Z]*', text)
+# print(spl)
+
+# # 9)
+# import re 
+# text = "helloJohnMyNameIsAlikhan"
+# x = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
+# print(x)
+
+# 10)
+import re 
+text = "someCamelCase"
+res = re.sub(r'([a-z])([A-Z])', r'\1_\2', text)
+des = re.split(r'_', res)
+x = ''
+for i in des:
+    if i == des[-1]:
+        x += i.lower()
+        break
+    else: 
+        x += i.lower() + "_"
+print(x)
