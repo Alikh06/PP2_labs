@@ -65,10 +65,64 @@
 # for i in file:
 #     copy.write(i)
 
-# 8)
-import os
-path = input("Please input path of file: ")
-if os.path.exists(path):
-    os.remove(path)
-else:
-    print("Path isn't exists")
+# # 8)
+# import os
+# path = input("Please input path of file: ")
+# if os.path.exists(path):
+#     os.remove(path)
+# else:
+#     print("Path isn't exists")
+
+# # built-in-functions
+# # 1)
+# from functools import reduce
+# def multiply(numbers):
+#     result = reduce(lambda x, y: x*y, numbers)
+#     return result
+# numbers = [1, 2, 3, 4]
+# print(f"Product of all num = {multiply(numbers)}")
+
+# # 2)
+# def count_case_letters(string):
+#     upper_count = sum(1 for char in string if char.isupper())
+#     lower_count = sum(1 for char in string if char.islower())
+#     print(f"Upper case letters = {upper_count}")
+#     print(f"Lower case letters = {lower_count}")
+# string = "Hello World!"
+# count_case_letters(string)
+
+# # 3)
+# def is_palindrome(string):
+#     if "".join(reversed(string)) == string:
+#         return True
+#     else:
+#         return False
+# string = "kazak"
+# print(is_palindrome(string))
+
+# # 4)
+# import time
+# def square(n, m):
+#     n_square = pow(n, 1/2)
+#     m = float(m / 1000)
+#     time.sleep(m)
+#     return f"Square root of {n} after {int(m*1000)} miliseconds is {n_square}"
+# n = 25100
+# m = 2123
+# print(square(n, m))
+
+# 5)
+def checking_true(tuple):
+    our_list = list(tuple)
+    b = False
+    for i in our_list:
+        if bool(i):
+            b = True
+        else: 
+            b = False
+            print("All el in our tuple is not true")
+            return
+    if b:
+        print("All el in our tuple is true")
+tuple = ("a", 1, "A", "B", 5, -1)
+checking_true(tuple)
