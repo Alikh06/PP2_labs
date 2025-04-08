@@ -53,7 +53,7 @@
 # # 2)
 # import pygame
 
-# playlist = [r"C:\Users\Victus\Desktop\Ali\Python\Pygame\kajjrat-nurtas-njusha-almaty-tunderi.mp3", r"Кайрат Нуртас, ИРИНА КАЙРАТОВНА - Тун-[muzmir.kz].mp3"]
+# playlist = [r"C:\Users\Victus\Desktop\Ali\PP1\kajjrat-nurtas-njusha-almaty-tunderi.mp3", r"C:\Users\Victus\Desktop\Ali\PP1\Кайрат Нуртас, ИРИНА КАЙРАТОВНА - Тун-[muzmir.kz].mp3"]
 # current_track = 0
 
 # def play():
